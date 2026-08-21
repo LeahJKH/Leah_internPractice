@@ -6,12 +6,14 @@ export default function SettingsPageU() {
     return(
         <>
         <main>
-            <p>{user.name}</p>
-            <p>{user.lastname}</p>
-            <p>{user.birthdate}</p>
-            <p>{user.email}</p>
-            <p>{user.CreatedAt}</p>
-            <p>{user.id}</p>
+            <section>
+                <p>fornavn: {user.name}</p>
+                <p>etternavn: {user.lastname}</p>
+                <p>fødselsdag: {user.birthdate}</p>
+                <p>email: {user.email}</p>
+                <p>bruker lagd: {user.CreatedAt}</p>
+                <p>Bruker id: {user.id}</p>
+            </section>
         </main>
         </>
     )
