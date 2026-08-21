@@ -1,69 +1,51 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client"
+
+import {useState, useEffect} from 'react'
 
 export default function Home() {
+  // the states for inputfield so we can check upon database
+  const [email, setEmail] = useState("");
+  const [pass, setpass] = useState("");
+
+
+  // gets "database". for now fetches a dummy json
+  function GetUserList(e) {
+    e.preventDefault() // removes form default action
+    try {
+      fetch("/TestData/user.json") // fetches api/data
+      .then(res => res.json())
+      .then(data => data.forEach((e) => checkUser(e.email, e.password, e.isAdmin))) // sends usable info too be checked, runs through whole json. (need better solution for speed. this logic will end up in backend)
+    } catch (err) {
+      console.error(err) // catches errors
+    }
+  }
+
+  // puts inputted mail and pass against dummy object too see if matches
+  function checkUser(mail, password, admin) {
+    if (email === mail && pass === password) {
+      console.log("matched: " + mail+ ", " + password +  ", " + admin) // just for testing purpouses
+    } else {
+      console.log("couldnt match: " + mail +" " + email +", " + password +" " + pass + ", " + admin) // testing testing 1 2 3
+    }
+  }
+
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main>
+      <section>
+          <form onSubmit={GetUserList}> {/* makes sure on submit starts function. a button with no direction auto submits */}
+            <label htmlFor="email">
+              Email:
+              <input type="email" name="email" id="Email" placeholder="bruker@gmail.com" required value={email} onChange={(e) => setEmail(e.target.value.toLowerCase())} />
+            </label>
+            <label htmlFor="password">
+              Passord:
+              <input type="password" name="password" id="password" placeholder="*****" value={pass} onChange={(e) => setpass(e.target.value)} required/>
+            </label>
+            <button>logg inn</button>
+          </form>
+
+      </section>
+    </main>
   );
 }
