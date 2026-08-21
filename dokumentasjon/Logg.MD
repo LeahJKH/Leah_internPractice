@@ -23,3 +23,6 @@ sendte rettskrevet prosjekt plan og beggynte på frontend koden. jeg lagde
 -context
 -dashboard admin
 -card component
+-settings
+
+TODO: behold data under refresh, gjør export siden, vurder settings som modal istede
