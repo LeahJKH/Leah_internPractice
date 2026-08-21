@@ -24,8 +24,8 @@ sendte rettskrevet prosjekt plan og beggynte på frontend koden. jeg lagde
 -dashboard admin
 -card component
 -settings
-
-TODO: behold data under refresh, gjør export siden, vurder settings som modal istede
+-beholde data under refresh
+TODO: gjør export siden, vurder settings som modal istede
 
 8:00-1600 (-30min for lunsj) // tidsbruk 7,5 timer
 totalt brukt: 15 timer
