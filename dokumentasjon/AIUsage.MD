@@ -689,3 +689,91 @@ Uniweb (2026, 19.08) Hosting pris [https://www.uniweb.no/hosting/vps/?_gl=1*19vq
 Vercel (2026, 19.08) Pro pris [https://vercel.com/docs/plans/pro-plan](https://vercel.com/docs/plans/pro-plan)
 
 WCAG (2026, 20.08) Dokumentasjon på WCAG 2.0 [https://www.w3.org/TR/WCAG22/](https://www.w3.org/TR/WCAG22/)
+
+<hr>
+
+Leah Yoimiya Johansen (21.08.2026):
+
+kan du lage meg flere objekter jeg kan copy paste med random informasjon.
+
+[
+    {
+        "tittel": "Leah's birthday!!!",
+        "image": "",
+        "description": "lang description",
+        "id": "73y1cy4cy1r7y8ry",
+        "Atendees": ["", "", ""],
+        "time": "11:11",
+        "date": "23.02.2026",
+        "type": 3,
+        "CreatedAt": "21.08.2026"
+    }
+]
+
+type vil da være 3: arrangementer 2: kurs  1:  informasjonsmøter
+gi et tomt array for påmeldte. og tomt bilde for bilde
+
+gemini pro 3.1:
+
+Her er flere objekter med variert og realistisk informasjon, klare til å kopieres. Jeg har satt inn et tomt array [] for Atendees og en tom streng "" for image, slik du ba om.
+
+JSON
+[
+    {
+        "tittel": "Sommerfest i parken",
+        "image": "",
+        "description": "Bli med på årets store sommerfest! Det blir servert grillmat, kald drikke og god stemning. Ta gjerne med deg en venn eller to. Vi setter opp volleyballnett og sørger for bra musikk hele kvelden.",
+        "id": "a9b8c7d6e5f4g3h2",
+        "Atendees": [],
+        "time": "17:00",
+        "date": "15.06.2027",
+        "type": 3,
+        "CreatedAt": "21.08.2026"
+    },
+    {
+        "tittel": "Førstehjelpskurs for nybegynnere",
+        "image": "",
+        "description": "Lær grunnleggende førstehjelp, hjerte- og lungeredning (HLR) og hvordan du skal håndtere akutte skader. Kurset holdes av sertifiserte instruktører. Diplom utdeles ved fullført kurs.",
+        "id": "x1y2z3a4b5c6d7e8",
+        "Atendees": [],
+        "time": "18:00",
+        "date": "10.09.2026",
+        "type": 2,
+        "CreatedAt": "20.08.2026"
+    },
+    {
+        "tittel": "Informasjonsmøte om nytt avfallssystem",
+        "image": "",
+        "description": "Kommunen inviterer til et åpent informasjonsmøte angående de nye søppeldunkene og kildesorteringsreglene som trer i kraft neste måned. Det blir anledning til å stille spørsmål mot slutten av møtet.",
+        "id": "p0o9i8u7y6t5r4e3",
+        "Atendees": [],
+        "time": "19:00",
+        "date": "05.10.2026",
+        "type": 1,
+        "CreatedAt": "18.08.2026"
+    },
+    {
+        "tittel": "Kurs i avansert Excel",
+        "image": "",
+        "description": "Dette kurset er for deg som allerede kan det grunnleggende, men ønsker å lære om pivottabeller, makroer og effektiv dataanalyse. Husk å ta med egen bærbar PC med Excel installert.",
+        "id": "m1n2b3v4c5x6z7l8",
+        "Atendees": [],
+        "time": "09:00",
+        "date": "12.11.2026",
+        "type": 2,
+        "CreatedAt": "15.08.2026"
+    },
+    {
+        "tittel": "Julekonsert med lokalt kor",
+        "image": "",
+        "description": "Tradisjonen tro inviterer vi til en stemningsfull julekonsert i kulturhuset. Koret vil synge både kjente og kjære julesanger, samt noen spennende nyheter. Gløgg og pepperkaker serveres i pausen.",
+        "id": "q1w2e3r4t5y6u7i8",
+        "Atendees": [],
+        "time": "18:30",
+        "date": "12.12.2026",
+        "type": 3,
+        "CreatedAt": "21.08.2026"
+    }
+]
+
+<hr>

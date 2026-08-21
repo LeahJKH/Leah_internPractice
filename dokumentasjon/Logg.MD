@@ -18,4 +18,8 @@ fortsettelse og korrigering på punkter. sendt av både john arne og emil. og en
 totalt brukt: 7,5 timer
 
 # DAG 3 21.08.2026
-sendte rettskrevet prosjekt plan og beggynte på frontend koden
+sendte rettskrevet prosjekt plan og beggynte på frontend koden. jeg lagde
+-login designløs
+-context
+-dashboard admin
+-card component
