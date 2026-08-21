@@ -29,11 +29,8 @@ export default function Home() {
       console.log("matched: " + mail+ ", " + password +  ", " + admin) // just for testing purpouses
       CreateUser(id, mail)
 
-      if (admin) { // redirects too right page depending on userprivelage
-        redirect("/AdminDash") // sepperated for now for testing mvp will make one whole when mvp done tested
-      } else {
-        redirect("/UserDash")
-      }
+      redirect("/UserDash") // single page switcher will work on admin features but for less code keep it there
+      
     } else {
       console.log("couldnt match: " + mail +" " + email +", " + password +" " + pass + ", " + admin) // testing testing 1 2 3
     }
